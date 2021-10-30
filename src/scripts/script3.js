@@ -1,4 +1,4 @@
-let myName = 'Thanos Tsoustas';
+let myName = "Thanos Tsoustas";
 
 function myNameFun(name) {
   let myName = 0;
@@ -8,10 +8,10 @@ function myNameFun(name) {
 
 myNameFun(myName);
 
+let i;
 for (i of [1, 2, 3, 4, 5]) {
   let myName = 1;
   console.log(myName);
-  console.log(this);
 }
 
 console.log(myName);

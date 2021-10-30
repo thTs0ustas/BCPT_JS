@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "lib": ["DOM","ES2020"],
+    "outDir": "./src/xmasTree",
+    "allowJs": true,
+    "target": "ES2021",
+    "module": "CommonJS"
+  },
+  "exclude": ["node_modules",".idea","src/scripts"],
+  "include": ["./src/**/*"]
+}

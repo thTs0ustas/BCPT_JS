@@ -1,30 +1,30 @@
 const contitionCheck = ([...options], input) => options.includes(input);
 
 const coffeeMachine = () => {
-  const Power = 'on';
-  let userInputPower = prompt('Power', 'on');
+  const Power = "on";
+  let userInputPower = prompt("Power", "on");
 
   if (Power === userInputPower) {
-    while (userInputPower == 'on') {
-      let coffeeType = prompt('Coffee?');
-      if (contitionCheck(['Latte', 'Mocha', 'Espresso'], coffeeType)) {
+    while (userInputPower === "on") {
+      let coffeeType = prompt("Coffee?");
+      if (contitionCheck(["Latte", "Mocha", "Espresso"], coffeeType)) {
         switch (coffeeType) {
-          case 'Latte': {
+          case "Latte": {
           }
-          case 'Mocha': {
+          case "Mocha": {
           }
-          case 'Espresso': {
+          case "Espresso": {
           }
         }
       } else {
-        alert('Coffeeeee');
+        alert("Coffeeeee");
         continue;
       }
-      alert('coffee ready');
-      userInputPower = prompt('More coffee: on - No more coffee: off');
+      alert("coffee ready");
+      userInputPower = prompt("More coffee: on - No more coffee: off");
     }
   }
-  alert('turnig off');
+  alert("turnig off");
 };
 coffeeMachine();
 

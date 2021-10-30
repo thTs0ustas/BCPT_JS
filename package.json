@@ -2,7 +2,7 @@
   "name": "cb15pt_js_practice",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts/script.js",
+  "main": "src/scripts/script.js",
   "dependencies": {
     "esm": "^3.2.25",
     "typescript": "^4.4.4"
@@ -12,11 +12,13 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.14",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "tslint": "^6.1.3",
+    "tslint-plugin-prettier": "^2.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon esm scripts/script5.js"
+    "start": "nodemon esm src/scripts/script5.js"
   },
   "type": "module",
   "author": "",

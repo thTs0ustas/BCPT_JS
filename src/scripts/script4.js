@@ -1,4 +1,4 @@
-let myArray = [1, 2, 3, 4, 5];
+// let myArray = [1, 2, 3, 4, 5];
 
 const getArrayAndMultiplyByNumber = (num) => (array) =>
   array.map((elem) => elem * num);
@@ -27,7 +27,7 @@ function firstCharUpperCase(string) {
 }
 
 function returnMyWholeName(firstName, lastName, isCapital) {
-  let returnedMessage = isCapital
+  const returnedMessage = isCapital
     ? `${firstName.toUpperCase()} ${lastName.toUpperCase()}`
     : `${firstCharUpperCase(firstName)} ${firstCharUpperCase(
         lastName
@@ -53,7 +53,7 @@ let testArray = [
 
 function normalCase(string) {
   let newString = string.replace(/\W|\s|\d/g, "");
-  return newString != /^[A-Z]\w+/
+  return newString !== /^[A-Z]\w+/
     ? newString.charAt(0).toUpperCase() +
         newString.slice(1).toLowerCase()
     : newString;
