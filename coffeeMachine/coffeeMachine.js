@@ -1,26 +1,32 @@
-const contitionCheck = require('./contitionCheck');
+const conditionCheck = (options, input) => {
+  return options.includes(input);
+};
 
 const coffeeMachine = () => {
-  const Power = 'on';
-  let userInputPower = prompt('Power', 'on');
+  const Power = "on";
+  let userInputPower = prompt("Power", "on");
 
   if (Power === userInputPower) {
-    while (userInputPower == 'on') {
-      let coffeeType = prompt('Coffee?');
-      if ((!contitionCheck(['Latte', 'Mocha', 'Espresso']), coffeeType))
-        coffeeType = prompt('Coffffeee');
+    while (userInputPower == "on") {
+      let coffeeType = prompt("Coffee?");
+      if ((!conditionCheck(["Latte", "Mocha", "Espresso"]), coffeeType))
+        coffeeType = prompt("Coffffeee");
       switch (coffeeType) {
-        case 'Latte': {
+        case "Latte": {
+          console.log("Latte");
+          break;
         }
-        case 'Mocha': {
+        case "Mocha": {
+          console.log("Mocha");
+          break;
         }
-        case 'Espresso': {
+        case "Espresso": {
+          console.log("Espresso");
+          break;
         }
       }
-      alert('coffee ready');
-      userInputPower = prompt('More coffee: on - No more coffee: off');
+      alert("coffee ready");
+      userInputPower = prompt("More coffee: on - No more coffee: off");
     }
   }
 };
-
-module.exports = coffeeMachine;

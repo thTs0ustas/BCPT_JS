@@ -5,9 +5,10 @@
   },
   "plugins": ["prettier"],
   "extends": ["prettier", "eslint:recommended"],
+
   "parserOptions": {
     "ecmaVersion": 11,
-    "sourceType": "script"
+    "sourceType": "module"
 //    "ecmaFeatures": {
 //      "arrowFunctions": true,
 //      "modules": true,
