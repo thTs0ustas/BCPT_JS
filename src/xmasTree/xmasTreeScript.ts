@@ -1,11 +1,11 @@
 // Work in progress....
-
-// The tree is build taking a single line with spaces and one '*'.
-// That has a width based on the height of the upper body of the tree.
-//
+// The tree is build starting with a single line with spaces and one '*'.
+// That line has a width based on the height of the upper body of the tree.
+// In each iteration spaces and stars are replaced with the stars and spaces corresponding to the iteration
 
 // Final function to print tree -Upper and lower part-
-function xmasTree(height: number): string {
+
+function xmasTree(height: number) {
   return `${upperXmasTree(height)}${bottomXmasTree(height)}`;
 }
 
@@ -29,10 +29,11 @@ function bottomXmasTree(height: number) {
   let bottomStar = "";
   const topStar = xmasTreeTopStar(height);
   const iterator = height;
-  let heightDivider;
-  if (height > 10) {
+  let heightDivider = height % 2 !== 0 ? height / 3 + 1 : height / 4 + 1;
+
+  if (height < 10 && height % 5 === 0) {
     heightDivider = 5;
-  } else if (height >= 5 && height <= 10) {
+  } else if ((height < 20 && height % 5 === 0) || height % 3 === 0) {
     heightDivider = 4;
   } else {
     heightDivider = 3;
@@ -40,17 +41,20 @@ function bottomXmasTree(height: number) {
 
   // create the bottom part of the tree
 
+  let treeTrunk = "";
   for (let j = iterator; j > 0; j -= height / heightDivider + 1) {
     if (j !== iterator) {
       bottomStar += "\n" + topStar.replace(replacementStarsAndSpaces(j), starsToAdd(j));
     }
+    treeTrunk = topStar.replace(replacementStarsAndSpaces(j - 1), starsToAdd(j - 1));
   }
+  // const bottomRow = bottomStar
+  //   .split("\n")
+  //   [bottomStar.split("\n").length - 1].trim().length;
 
   // create the tree trunk
 
-  const treeTrunk = bottomStar.split("\n")[bottomStar.split("\n").length - 1];
-
-  for (let i = 0; i < height / 5; i++) {
+  for (let i = 0; i < height / 3; i++) {
     bottomStar += "\n" + treeTrunk;
   }
   return bottomStar;

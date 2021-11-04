@@ -8,7 +8,8 @@
     "outDir": "./src/xmasTree",
     "allowJs": true,
     "target": "ES2021",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "watchDirectory": "useFsEvents"
   },
   "exclude": ["node_modules",".idea","src/scripts"],
   "include": ["./src/**/*"]

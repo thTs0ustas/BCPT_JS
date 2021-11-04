@@ -1,4 +1,4 @@
-const contitionCheck = ([...options], input) => options.includes(input);
+const conditionCheck = ([...options], input) => options.includes(input);
 
 const coffeeMachine = () => {
   const Power = "on";
@@ -7,24 +7,27 @@ const coffeeMachine = () => {
   if (Power === userInputPower) {
     while (userInputPower === "on") {
       let coffeeType = prompt("Coffee?");
-      if (contitionCheck(["Latte", "Mocha", "Espresso"], coffeeType)) {
+      if (conditionCheck(["Latte", "Mocha", "Espresso"], coffeeType)) {
         switch (coffeeType) {
           case "Latte": {
+            break;
           }
           case "Mocha": {
+            break;
           }
           case "Espresso": {
+            break;
           }
         }
       } else {
-        alert("Coffeeeee");
+        alert("Coffee!!!!!!!");
         continue;
       }
       alert("coffee ready");
       userInputPower = prompt("More coffee: on - No more coffee: off");
     }
   }
-  alert("turnig off");
+  alert("turning off");
 };
 coffeeMachine();
 
@@ -41,18 +44,18 @@ coffeeMachine();
 
 // // Process!!
 
-// function thermostat(targTemp, curTemp) {
+// function thermostat(targetTemp, curTemp) {
 //   while (Power === 'on') {
-//     if (curTemp < targTemp) {
+//     if (curTemp < targetTemp) {
 //       console.log(
-//         'Not quite there yet. ' + (targTemp - curTemp) + ' more degrees needed!'
+//         'Not quite there yet. ' + (targetTemp - curTemp) + ' more degrees needed!'
 //       );
 //       loopCounter++;
-//       thermostat(targTemp, curTemp + 1);
+//       thermostat(targetTemp, curTemp + 1);
 //       //   curTemp++;
 //     } else {
 //       Power = 'off';
-//       console.log('The temp is rigth, switching of the heat pump now');
+//       console.log('The temp is right, switching off the heat pump now');
 //     }
 //   }
 // }

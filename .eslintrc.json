@@ -9,12 +9,6 @@
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module"
-//    "ecmaFeatures": {
-//      "arrowFunctions": true,
-//      "modules": true,
-//      "defaultParams": true,
-//      "forOf": true
-//    }
   },
   "rules": {
     "prettier/prettier": "error",
