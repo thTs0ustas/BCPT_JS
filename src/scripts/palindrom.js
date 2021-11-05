@@ -23,6 +23,7 @@ function checkPalindrome3(string) {
 
 console.log(checkPalindrome3("lol"));
 
+//////////////////
 function calculator(num1, num2, operator) {
   while (!Number.isInteger(num1)) {
     console.error("Wrong operation");

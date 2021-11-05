@@ -10,14 +10,14 @@ const fibonacciRecursion = (num1, num2, times) => {
 
   return arr;
 };
-console.log(...fibonacciRecursion(0, 1, 9));
+console.log(...fibonacciRecursion(0, 1, 12));
 
 ///////////////////////////////////////////
 
-const fibonacci = (num1, num2, times) => {
-  let fibArr = [];
-
-  fibArr.push(num1, num2);
+const fibonacci = (times) => {
+  let num1 = 0;
+  let num2 = 1;
+  let fibArr = [num1, num2];
 
   while (times > 0) {
     let tempNumber = num1;
@@ -31,4 +31,6 @@ const fibonacci = (num1, num2, times) => {
   return fibArr;
 };
 
-console.log(...fibonacci(0, 1, 9));
+console.log(...fibonacci(12));
+
+module.exports = fibonacciRecursion;

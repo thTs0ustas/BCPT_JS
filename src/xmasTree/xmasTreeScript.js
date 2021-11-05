@@ -3,6 +3,7 @@
 // That line has a width based on the height of the upper body of the tree.
 // In each iteration spaces and stars are replaced with the stars and spaces corresponding to the iteration
 // Final function to print tree -Upper and lower part-
+
 function xmasTree(height) {
     return `${upperXmasTree(height)}${bottomXmasTree(height)}`;
 }
@@ -92,4 +93,5 @@ function replacementStarsAndSpaces(iterator) {
     return replacement;
 }
 // Final output
+
 console.log(xmasTree(15));
