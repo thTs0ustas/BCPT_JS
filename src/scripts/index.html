@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
 </head>
 <body>
-$END$
+    <ul>
+        <li class='l1'>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+        <li>EEE</li>
+
+    </ul>
+
+    <script>
+        
+        function fn(){
+          const child = document.body.children[0].children[1];
+          console.log(child)
+         
+          
+          const newListItem = document.createElement('li');
+         
+          newListItem.textContent = 'FFF' ;
+          const forthElem = document.body.children[0].children[3].style.color = 'green';
+          const thirdElem = document.body.children[0].children[2].style.fontFamily = 'Helvetica';
+          const firstElem = document.body.children[0].children[0].style.fontFamily = 'Helvetica';
+          document.body.children[0].insertBefore(newListItem , document.body.children[0].children[4])
+          const fifthElem = document.body.children[0].children[4].style.fontWeight = 'bolder';
+          const lastElem = document.body.children[0].children[5].style.visibility = 'hidden';
+       
+        }
+        
+        let button = document.createElement("button")
+        button.innerText = 'Press'
+        document.body.appendChild(button)
+        button.addEventListener('click',fn)
+    </script>
 </body>
 </html>

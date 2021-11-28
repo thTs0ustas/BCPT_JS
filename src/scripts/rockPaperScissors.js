@@ -17,7 +17,9 @@ const rockPaperScissors = () => {
   let computer = "";
 
   while (games < 2) {
+
     computer = possibleOptions[Math.floor(Math.random() * 3)];
+    
     let player = prompt("Select your  hand");
 
     while (!possibleOptions.includes(player)) {

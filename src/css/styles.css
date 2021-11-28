@@ -1,0 +1,40 @@
+body {
+  width: 100%;
+  min-width: 500px;
+  font-family: Arial, serif;
+  font-weight: bold;
+  font-style: italic;
+}
+table {
+  margin: 0 auto;
+  background: linear-gradient(45deg, #f103f1, #00ffff);
+}
+
+table,
+th,
+td {
+  width: 500px;
+  text-align: center;
+  border: 1px #16242f solid;
+  border-radius: 5px;
+}
+
+th,
+td {
+  background: #fff;
+  opacity: 0.8;
+  box-shadow: 1px 1px 1px #16242f;
+  padding: 2px;
+}
+
+th {
+  color: #0a0af5;
+  transition: 0.3s linear;
+}
+th:hover {
+  z-index: 2;
+
+  background: linear-gradient(45deg, #b65dc0, #424283);
+  opacity: 1;
+  color: #16242f;
+}

@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+  </head>
+  <body
+    style="
+      background: url(/src/images/mountains-landscape-winter-snow-wallpaper-preview.jpg)
+        no-repeat center;
+      background-size: cover;
+      color: antiquewhite;
+    "
+  >
+    <p>
+      <a href="index.html" style="text-decoration: none; color: floralwhite">Homepage</a>
+    </p>
+    <p>
+      <a href="contact.html" style="text-decoration: none; color: floralwhite">Contact</a>
+    </p>
+    <p>
+      <a href="aboutUs.html" style="text-decoration: none; color: floralwhite"
+        >About us</a
+      >
+    </p>
+    <h1>Contact</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal</legend>
+        <label for="f_name">First Name: </label>
+        <input id="f_name" type="text" required />
+        <br />
+        <br />
+
+        <label for="l_name">Last Name: </label>
+        <input id="l_name" type="text" required />
+        <br />
+        <br />
+
+        <label for="mail">Email: </label>
+        <input id="mail" type="text" required />
+        <br />
+        <br />
+
+        <label for="date">Date of Birth: </label>
+        <input id="date" type="date" required />
+        <br />
+        <br />
+        <label>Gender: </label>
+        <input id="man" type="radio" name="gender" required />
+        <label for="man">Man</label>
+        <input id="woman" type="radio" name="gender" />
+        <label for="woman">Woman</label>
+        <input id="other" type="radio" name="gender" />
+        <label for="other">Other</label>
+        <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Other</legend>
+
+        <p>Favorite Food:</p>
+        <label for="pizza">Pizza</label>
+        <input id="pizza" type="checkbox" name="food" />
+        <label for="souvlakia">Souvlakia</label>
+        <input id="souvlakia" type="checkbox" name="food" />
+        <label for="burger">Burger</label>
+        <input id="burger" type="checkbox" name="food" />
+        <br />
+        <br />
+
+        <label for="age">Age</label>
+        <input id="age" type="number" name="food" min="1" max="99" />
+        <br />
+        <br />
+
+        <label for="tArea"></label>
+        <textarea name="textarea" id="tArea" cols="30" rows="10"></textarea>
+        <br />
+        <br />
+
+        <label for="favSport">Favorite Sport: </label>
+        <select name="favSport" id="favSport">
+          <option value="1">1: werwer</option>
+          <option value="2">2: sdfsdf</option>
+          <option value="3">3: xcvxcv</option>
+          <option value="4">4: yuiyui</option>
+        </select>
+        <br />
+        <br />
+      </fieldset>
+      <br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+      <br />
+      <br />
+    </form>
+
+    <form>
+      <table style="background: #16242f; border: 2px ridge rosybrown">
+        <tr>
+          <th colspan="4">Έγγραφή Στη Σελίδα</th>
+        </tr>
+        <tr>
+          <td><label for="name">ΟΝΟΜΑ</label></td>
+          <td><input id="name" type="text" /></td>
+          <td><label for="lastName">ΕΠΙΘΕΤΟ</label></td>
+          <td><input id="lastName" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">ΚΩΔΙΚΟΣ</label></td>
+          <td><input id="password" type="password" /></td>
+          <td><label for="email">ΕΜΑΙΛ</label></td>
+          <td><input id="email" type="email" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="ΕΓΓΡΑΦΗ" /></td>
+
+          <td colspan="2"><input type="reset" value="ΚΑΘΑΡΙΣΜΟΣ" /></td>
+        </tr>
+      </table>
+    </form>
+    <br /><br /><br />
+    <!--    <a-->
+    <!--      href="https://www.google.gr/search?q=snowing+mountains&hl=en&tbm=isch&sxsrf=AOaemvKIPH4NcNp9jITjKV7nnVlGSTI60g%3A1636138153695&source=hp&biw=984&bih=999&ei=qXyFYYHvJ6eE4-EP3Mqd0Ao&iflsig=ALs-wAMAAAAAYYWKua4BHqWRKCUNfYdEr0QvjCxTJRer&oq=snowing+m&gs_lcp=CgNpbWcQAxgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCCMQ7wMQ6gIQJzoHCCMQ7wMQJ1DDA1jiQ2C7T2gEcAB4AIABgAGIAdUKkgEEMC4xMpgBAKABAaoBC2d3cy13aXotaW1nsAEK&sclient=img"-->
+    <!--      target="_blank"-->
+    <!--    >-->
+    <!--      <img-->
+    <!--        src="/src/images/mountains-landscape-winter-snow-wallpaper-preview.jpg"-->
+    <!--        style="width: 100%"-->
+    <!--        alt="Snowing Mountains"-->
+    <!--      />-->
+    <!--    </a>-->
+  </body>
 </html>
